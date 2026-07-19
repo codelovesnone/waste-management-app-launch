@@ -1,0 +1,68 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment & secrets — never commit credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.mobileprovision
+*.jks
+*.keystore
+google-services.json
+GoogleService-Info.plist
+AuthKey_*.p8
+credentials.json
+service-account*.json
+
+# Local notes that may contain private client data
+local/
+.tmp/
+*.local.md
+
+# Dependencies & build artifacts (future native / export work)
+node_modules/
+dist/
+build/
+out/
+.expo/
+.turbo/
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mobile / native tooling
+Pods/
+DerivedData/
+*.xcworkspace
+!default.xcworkspace
+*.xcuserstate
+android/.gradle/
+android/app/build/
+ios/build/
+
+# Large binary dumps (keep final store assets under assets/; ignore raw dumps)
+*.zip
+*.tar
+*.tar.gz
+!assets/**/*.png
+!assets/**/*.jpg
+!assets/**/*.jpeg
+!assets/**/*.webp
+!assets/**/*.svg
+!assets/**/*.pdf
+
+# Screenshots with PII — prefer redacted exports in assets/screenshots/
+*_unredacted.*
